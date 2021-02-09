@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"); /*Import font from google fonts*/
+
+/* TODO Get rid of purple flash on page load*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /*Tells the browser to account for any border and padding when you specify an element's height and width*/
+  margin: 0; /*Removes the browser's default margin and padding */
+  padding: 0;
+}
+
+body {
+  background-color: #24252a; /*TODO Decide on background color #24252a */
+  display: flex; /*Used to have footer stay on bottom*/
+  flex-direction: column; /*The direction in which the elements are stacked*/
+  min-height: 100vh; /*Used to keep the footer at the bottom of the screen by filling the viewport*/
+}
+
+header {
+  display: flex; /*Use flexbox on the header */
+  justify-content: space-between; /*Evenly distribute the items in the line*/
+  align-items: center; /*Items are aligned in the center axis */
+}
+
+nav {
+  font-family: "Montserrat", sans-serif; /*Apply the imported font to the nav bar*/
+  font-weight: 500; /*Choose the font-weight*/
+  order: 2; /*Makes the nav the first child in the flex order*/
+}
+
+footer {
+  width: 100%; /*Span the entire screen width*/
+  margin-top: auto; /*Used to keep footer at bootom of screen when not enough content*/
+  color: #f8f8ff; /*Text in footer is off-white*/
+  background-color: #2e3445; /*Background color for footer*/
+  display: flex; /*Use flexbox to layout footer*/
+  justify-content: center; /* Pack items around the center */
+  flex-direction: column; /*The direction in which the elements are stacked*/
+  align-items: center; /*Elements are placed at the center of the flexbox*/
+  font-family: "Montserrat", sans-serif; /*Apply the imported font to the nav bar*/
+}
+
+footer ul {
+  display: flex; /*Use flexbox to display social media icons*/
+  align-items: center; /*Elements are placed at the center of the flexbox*/
+  justify-content: center; /* Pack items around the center */
+}
+
+a:visited {
+  color: inherit; /*Inherits color so it does not appear purple after being visited*/
+}
+
+.logo {
+  order: 1; /*Makes the logo the second child in the flex order*/
+  color: #f8f8ff; /*Color the logo text*/
+  font-family: "Montserrat", sans-serif; /*Apply the imported font to the nav bar*/
+  font-weight: 500; /*Choose the font-weight*/
+  padding: 1em; /*Add padding around logo text*/
+  font-size: 1.5em; /*Increase the size of the logo text */
+}
+.nav_links {
+  list-style: none; /*Removes the bullet points*/
+  margin-right: auto; /*Move logo to far right*/
+}
+
+.nav_links li {
+  display: inline-block; /*Used so the links do not stack*/
+  padding: 1em; /*Padding between links*/
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s; /*Transition used for color change during hover*/
+  /*Property describe( all elements, duration over 0.3s, ease the transition and have no delay)*/
+  color: #f8f8ff; /*Make the text an offwhite color*/
+  text-decoration: none; /*Removes the underline from the links*/
+}
+
+.nav_links li a:hover {
+  color: lightskyblue; /*Change text color when hovering */
+}
+
+.toggle_button {
+  position: absolute; /*Position relative to the header*/
+  top: 1.5em; /*Position the button in relation to the top of the screen*/
+  right: 1em; /*Position the button in relation to the rigth of the screen*/
+  display: none; /*Do not display by default*/
+  flex-direction: column; /*The direction in which the white bars are stacked*/
+  justify-content: space-between; /*Evenly distribute the items*/
+  width: 30px; /*Total width of the hamburger button*/
+  height: 21px; /*Total height of the hamburger button*/
+}
+
+.toggle_button .bar {
+  /*Creates the hamburger menu button*/
+  height: 3px; /*Height of each hamburger bar*/
+  width: 100%; /*Make the width the full size of the span*/
+  background-color: white; /*Makes the bar white */
+  border-radius: 10px; /*Rounds the border*/
+}
+
+@media (max-width: 650px) {
+  /*Mobile screen responsiveness*/
+  .toggle_button {
+    display: flex; /*Displays when the screensize is small enough */
+  }
+
+  nav {
+    display: none; /*Don't display the nav by default*/
+    width: 100%; /*Span the screen width*/
+  }
+
+  header {
+    flex-direction: column; /*The direction in which the elements are stacked*/
+    align-items: flex-start; /*Elements is placed at the start of the flexbox*/
+  }
+
+  .nav_links {
+    width: 100%; /*The unordered list spans the screen width*/
+    flex-direction: column; /*The direction in which the links are stacked*/
+  }
+
+  .nav_links li {
+    display: block; /*Causes the list items to stack*/
+    text-align: center; /*Centers the text*/
+    padding: 0.75em; /*Padding for stacked list items*/
+  }
+
+  .nav_links li a {
+    padding: 0.5em 1em; /*Padding for the links*/
+  }
+
+  nav.active {
+    /*When the nav element is assigned the active class*/
+    display: flex; /*Pop out the menu*/
+  }
+}
