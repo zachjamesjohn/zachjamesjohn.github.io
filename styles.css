@@ -51,6 +51,10 @@ a:visited {
   color: inherit; /*Inherits color so it does not appear purple after being visited*/
 }
 
+a:link {
+  color: inherit; /*Inherits color so the link does not appear blue before being visited*/
+}
+
 .logo {
   order: 1; /*Makes the logo the second child in the flex order*/
   color: #f8f8ff; /*Color the logo text*/
