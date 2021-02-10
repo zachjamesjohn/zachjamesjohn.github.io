@@ -95,7 +95,7 @@ nav {
 }
 
 .logo {
-  order: 1; /*Makes the logo the second child in the flex order*/
+  order: 1; /*Makes the logo the first child in the flex order*/
   color: #f8f8ff; /*Color the logo text*/
   font-family: "Montserrat", sans-serif; /*Apply the imported font to the nav bar*/
   font-weight: 500; /*Choose the font-weight*/
@@ -309,7 +309,7 @@ footer ul {
 
 /*Mobile views About Page */
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   /* Image starts overlapping text*/
   .about_image img {
     margin-bottom: 1em; /*Add extra pading under the image when it would be over text*/
@@ -350,6 +350,7 @@ footer ul {
 @media (max-width: 360px) {
   .about_skills {
     width: 100%; /* Fixes grid overhang*/
+    margin-bottom: 1em; /*Mobile spacing*/
   }
 
   .skills_list {
