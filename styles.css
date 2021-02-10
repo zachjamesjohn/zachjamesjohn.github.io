@@ -1,9 +1,9 @@
+/*Imported fonts*/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"); /*Import font from google fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap");
 
-/* TODO Get rid of purple flash on page load*/
+/*General styling*/
 
 *,
 *::before,
@@ -14,12 +14,29 @@
 }
 
 body {
-  background-color: #24252a; /*TODO Decide on background color #24252a */
+  background-color: #24252a; /*Sets the background color for the whole website*/
   display: flex; /*Used to have footer stay on bottom*/
   flex-direction: column; /*The direction in which the elements are stacked*/
   min-height: 100vh; /*Used to keep the footer at the bottom of the screen by filling the viewport*/
 }
 
+a:visited {
+  color: inherit; /*Inherits color so it does not appear purple after being visited*/
+}
+
+a:link {
+  color: inherit; /*Inherits color so the link does not appear blue before being visited*/
+}
+
+.home_content,
+.contact_content,
+.about_content {
+  font-family: "Maven Pro", sans-serif; /*Apply the imported font to the text in main*/
+  color: #f8f8ff; /*Make the text an offwhite color*/
+  text-align: center; /*Center aligns the text and image*/
+}
+
+/*Nav bar styling*/
 header {
   display: flex; /*Use flexbox on the header */
   justify-content: space-between; /*Evenly distribute the items in the line*/
@@ -32,42 +49,6 @@ nav {
   order: 2; /*Makes the nav the first child in the flex order*/
 }
 
-footer {
-  width: 100%; /*Span the entire screen width*/
-  margin-top: auto; /*Used to keep footer at bootom of screen when not enough content*/
-  color: #f8f8ff; /*Text in footer is off-white*/
-
-  /* * ? Does the footer look better with or without the different color*/
-  background-color: #2e3445; /*Background color for footer*/
-  display: flex; /*Use flexbox to layout footer*/
-  justify-content: center; /* Pack items around the center */
-  flex-direction: column; /*The direction in which the elements are stacked*/
-  align-items: center; /*Elements are placed at the center of the flexbox*/
-  font-family: "Montserrat", sans-serif; /*Apply the imported font to the nav bar*/
-}
-
-footer ul {
-  display: flex; /*Use flexbox to display social media icons*/
-  align-items: center; /*Elements are placed at the center of the flexbox*/
-  justify-content: center; /* Pack items around the center */
-}
-
-a:visited {
-  color: inherit; /*Inherits color so it does not appear purple after being visited*/
-}
-
-a:link {
-  color: inherit; /*Inherits color so the link does not appear blue before being visited*/
-}
-
-.logo {
-  order: 1; /*Makes the logo the second child in the flex order*/
-  color: #f8f8ff; /*Color the logo text*/
-  font-family: "Montserrat", sans-serif; /*Apply the imported font to the nav bar*/
-  font-weight: 500; /*Choose the font-weight*/
-  padding: 1em; /*Add padding around logo text*/
-  font-size: 1.5em; /*Increase the size of the logo text */
-}
 .nav_links {
   list-style: none; /*Removes the bullet points*/
   margin-right: auto; /*Move logo to far right*/
@@ -108,13 +89,37 @@ a:link {
   border-radius: 10px; /*Rounds the border*/
 }
 
-.home_content,
-.contact_content,
-.about_content {
-  font-family: "Maven Pro", sans-serif; /*Apply the imported font to the text in main*/
-  color: #f8f8ff; /*Make the text an offwhite color*/
-  text-align: center; /*Center aligns the text and image*/
+.logo {
+  order: 1; /*Makes the logo the second child in the flex order*/
+  color: #f8f8ff; /*Color the logo text*/
+  font-family: "Montserrat", sans-serif; /*Apply the imported font to the nav bar*/
+  font-weight: 500; /*Choose the font-weight*/
+  padding: 1em; /*Add padding around logo text*/
+  font-size: 1.5em; /*Increase the size of the logo text */
 }
+
+/*Footer styling*/
+footer {
+  width: 100%; /*Span the entire screen width*/
+  margin-top: auto; /*Used to keep footer at bootom of screen when not enough content*/
+  color: #f8f8ff; /*Text in footer is off-white*/
+
+  /* * ? Does the footer look better with or without the different color*/
+  background-color: #2e3445; /*Background color for footer*/
+  display: flex; /*Use flexbox to layout footer*/
+  justify-content: center; /* Pack items around the center */
+  flex-direction: column; /*The direction in which the elements are stacked*/
+  align-items: center; /*Elements are placed at the center of the flexbox*/
+  font-family: "Montserrat", sans-serif; /*Apply the imported font to the nav bar*/
+}
+
+footer ul {
+  display: flex; /*Use flexbox to display social media icons*/
+  align-items: center; /*Elements are placed at the center of the flexbox*/
+  justify-content: center; /* Pack items around the center */
+}
+
+/*Home page styling*/
 
 .home_subtitle {
   padding-top: 1em; /*Adds padding to the top of the subtitle*/
@@ -125,47 +130,7 @@ a:link {
   padding-bottom: 1em; /*Adds padding to the bottom of the resume text*/
 }
 
-.contact_content {
-  display: flex;
-  flex-direction: column; /*The direction in which the elements are stacked*/
-  align-items: center; /*Elements are placed at the center of the flexbox*/
-  justify-content: center;
-}
-
-.contact_title {
-  padding: 0.5em;
-  font-size: 2em;
-}
-
-.form_body {
-  display: grid;
-  max-width: 50vw;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5vh 5vh 10vh;
-  grid-gap: 0.5em 0.5em;
-  font-family: "Maven Pro", sans-serif; /*Apply the imported font to the text in main*/
-  color: #f8f8ff; /*Make the text an offwhite color*/
-}
-
-.form_field.name_field {
-  max-height: 5vh;
-  grid-column: 1 / span 1;
-}
-
-.form_field.email_field {
-  max-height: 5vh;
-  grid-column: 2 / span 1;
-}
-
-.form_field.subject_field {
-  max-height: 5vh;
-  grid-column: 1 / -1;
-}
-
-.form_field.message_field {
-  max-height: 10vh;
-  grid-column: 1 / -1;
-}
+/*About page styling */
 
 .about_image img {
   /*TODO Still in progress*/
@@ -173,34 +138,74 @@ a:link {
   width: 135px;
 }
 
+/*Contact page styling*/
+
+.contact_title {
+  padding: 0.5em; /*Add padding on all sides around the title*/
+  font-size: 2em; /*Increase the font size*/
+}
+
 .form_body {
-  margin: auto;
-  padding-top: 1em;
+  display: grid; /*Grid used to position the form elements*/
+  max-width: 50vw; /*The contact form only takes up 50% of the viewport width at the most*/
+  grid-template-columns: 1fr 1fr; /*Make two columns each a fraction of the screen*/
+  grid-template-rows: 5vh 5vh 10vh; /*Make three rows, the first two are 5 percent of the viewport vh and the third is 10 %*/
+  grid-gap: 0.5em 0.5em; /*The gaps between grids*/
+  font-family: "Maven Pro", sans-serif; /*Apply the imported font to the text in main*/
+  color: #f8f8ff; /*Make the text an offwhite color*/
+}
+
+.form_field.name_field {
+  max-height: 5vh; /*Sets the max height of the name form field*/
+  grid-column: 1 / span 1; /*Start at the first column line and span one whole column*/
+}
+
+.form_field.email_field {
+  max-height: 5vh; /*Sets the max height of the email form field*/
+  grid-column: 2 / span 1; /*Share the same row with the name field and span 1 column*/
+}
+
+.form_field.subject_field {
+  max-height: 5vh; /*Sets the max height of the subject form field*/
+  grid-column: 1 / -1; /*Span the whole row*/
+}
+
+.form_field.message_field {
+  max-height: 10vh; /*Sets the max height of the message form field*/
+  grid-column: 1 / -1; /*Span the whole row*/
+}
+
+.form_body {
+  margin: auto; /*Used to center the form*/
+  padding-top: 1em; /*Padding to space from contact text*/
 }
 
 .form_field {
-  background-color: #2b2b2b;
-  border: 0;
-  border-radius: 1%;
-  padding-left: 0.25em;
-  font-size: 1em;
+  background-color: #2b2b2b; /*Color of the form fields*/
+  border: 0; /*Remove all border*/
+  border-radius: 1%; /*Slightly round edges*/
+  padding-left: 0.25em; /*Add padding the move the placehodler text slightly off left side of the input box*/
+  font-size: 1em; /*Set the font size*/
   font-family: "Maven Pro", sans-serif; /*Apply the imported font to the text in main*/
   color: #f8f8ff; /*Make the text an offwhite color*/
 }
 
 .form_button {
-  width: 50%;
-  background: 0 0;
+  width: 50%; /*Make the button 50% of the size of one of the columns*/
+  background: 0 0; /*Remove background*/
   font-family: "Maven Pro", sans-serif; /*Apply the imported font to the text in main*/
   color: #f8f8ff; /*Make the text an offwhite color*/
-  border: 0;
-  padding: 0.5em;
-  border-radius: 1%;
-  background-color: #2b2b2b;
+  border: 0; /*Remove border*/
+  padding: 0.5em; /*Padding for text*/
+  border-radius: 1%; /*Slightly round corners*/
+  background-color: #2b2b2b; /*Set the background color*/
 }
 
+/*Responsive Styling*/
+/*Working with screen sizes as small as 320px wide*/
+
 @media (max-width: 650px) {
-  /*Mobile screen responsiveness*/
+  /*Navbar and Footer Mobile Views*/
   .toggle_button {
     display: flex; /*Displays when the screensize is small enough */
   }
@@ -235,43 +240,53 @@ a:link {
     display: flex; /*Pop out the menu*/
   }
 }
+
 @media (max-width: 800px) {
+  /*Mobile view contact page*/
+
   .form_body {
-    margin: 0;
-    max-width: 100vw;
-    grid-gap: 0.5em 0em;
+    margin: 0; /*Remove margins*/
+    max-width: 100vw; /*Form max width to prevent overhang*/
+    grid-gap: 0.5em 0em; /*Remove the gap to fix overhang issue*/
   }
   .contact_form {
-    width: 100vw;
+    width: 100vw; /*Contact form will not overhand becasue it takes up 100% of the viewport width*/
   }
 
   .form_field.subject_field,
   .form_field.message_field {
-    max-width: 100vw;
+    max-width: 100vw; /*Form fields cannot overhang the width of its parent*/
   }
 
   .form_field.email_field,
   .form_field.name_field {
-    max-width: 50vw;
+    max-width: 50vw; /*Form fields cannot overhang the width of its parent*/
   }
 
   .form_field.name_field {
-    border-right: 1px solid white;
+    border-right: 1px solid white; /*Need to add a border between name field and email as the gap needed to be removed*/
+  }
+
+  .form_field.form_field.name_field,
+  .form_field.subject_field,
+  .form_field.message_field {
+    padding-left: 1em; /*Add padding on the left to move the placeholder text away from the left side of the input field*/
   }
 
   .contact_text {
-    padding-left: 1em;
+    padding-left: 1em; /*Add padding to make the text look better on small screens */
     padding-right: 1em;
   }
 }
 
 @media (max-width: 600px) {
+  /*Mobile view homepage*/
   .home_banner img {
-    max-width: 100vw;
+    max-width: 100vw; /*Used to make the image fit within smaller screen sizes*/
   }
   .home_subtitle,
   .home_title {
-    padding-left: 1em;
+    padding-left: 1em; /*Adds padding on the sides so the text isn't squished on mobile*/
     padding-right: 1em;
   }
 }
