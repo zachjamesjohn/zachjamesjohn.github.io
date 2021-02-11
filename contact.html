@@ -42,9 +42,13 @@
       <p class="contact_text">I am currently looking for full-time employment and freelancing opportunities.</p> <!--Contact form text-->
       <p class="contact_text">If you wish to reach out to me for any reason please use the form below.</p>
       <form action="https://send.pageclip.co/ClePxo6woNEccvMe8yOL7LaC6Cck7RXz/ContactForm" class="pageclip-form form_body" method="post"><!--Send form data to pageclip and emailed to my personal email-->
+        <label for="name" class="visually_hidden">Name</label><!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
         <input type="text" id="name" name="name" class="form_field name_field" placeholder="Name"> <!--Text input for name of person using contact form-->
+        <label for="email" class="visually_hidden">Email</label><!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
         <input type="email" id="email" name="email" class="form_field email_field" placeholder="Email"><!--Email input for contact form-->
+        <label for="name" class="visually_hidden">Subject</label><!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
         <input type="text" id="subject" name="subject" class="form_field subject_field" placeholder="Subject"><!--Text input for email subject -->
+        <label for="message" class="visually_hidden">Message</label> <!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
         <textarea id="message" name="message" class="form_field message_field" placeholder="Message"></textarea><!--Text Area for the contact form email message-->
         <button type="submit" class="pageclip-form__submit--dark-loader form_button"><!--Submit button with custom loader from pageclip-->
           <span>Send</span><!--Needed for the custom loader-->

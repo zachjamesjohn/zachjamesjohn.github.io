@@ -257,6 +257,20 @@ footer ul {
   background-color: #2b2b2b; /*Set the background color*/
 }
 
+/*Have labels for accessibility reasons but do not display. This is following the w3 recomended method*/
+
+.visually_hidden {
+  /*presenting the label in a 1-by-1 pixel area with a 1-pixel margin,*/
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 /*Responsive Styling*/
 /*Working with screen sizes as small as 320px wide*/
 
