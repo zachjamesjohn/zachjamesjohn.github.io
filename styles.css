@@ -104,6 +104,10 @@ nav {
   font-size: 1.5em; /*Increase the size of the logo text */
 }
 
+.logo a {
+  text-decoration: none; /*Link decoration removed*/
+}
+
 /*Footer styling*/
 footer {
   width: 100%; /*Span the entire screen width*/
