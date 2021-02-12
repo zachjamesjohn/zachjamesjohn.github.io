@@ -1,17 +1,40 @@
+<!--contact.html-->
+<!--COIS 3420 Web Application Development-->
+<!--Assignment #1 - Front End Design-->
+<!--Author: Zachary John - zjohn-->
+<!--This is the contact page for my portfolio site-->
+<!--Description: This page is the contact page for my portfolio site. It features a contact page where any interest clients or 
+recruiters could contact me by email.-->
+<!--Each page has a responsive header for navigation that turns into a hamburger menu when viewed on smaller screen sizes-->
+<!--Each page has a footer with links to my github and my linkedin-->
+<!--#1 Each page of the portfolio shares a common style -->
+<!--#2 Each page of the portfolio site includes a navigation bar-->
+<!--#4 Each page uses elements to display the webpages-->
+<!--#5 Each page used semantic elements where it makes sense-->
+<!--#6 The contact page has a form that users can enter their information into and send me an email-->
+<!--#7 All styling elements adhere to accessibility best practices-->
+<!--#8 All code has proper header and inline commenting-->
+<!--#9 The header on each page was formatted using inline CSS styling in addition to the external CSS styling used elsewhere-->
+<!--#10 Each page has an intuitive layout-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Homepage</title> <!--Title of page-->
+    <title>Portfolio Homepage</title>
+    <!--Title of page-->
     <link rel="stylesheet" href="css/styles.css" />
     <!--Link to External stylesheet-->
     <script src="scripts/script.js" defer></script>
     <!--Link to Javascript file that will not run until the page is loaded-->
     <script src="https://use.fontawesome.com/56e4d19ff3.js"></script>
     <!--Link to use font awesome icons-->
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link
+      rel="stylesheet"
+      href="https://s.pageclip.co/v1/pageclip.css"
+      media="screen"
+    />
     <!--Used to collect form information without using a server-->
   </head>
   <body>
@@ -36,52 +59,115 @@
         </ul>
       </nav>
     </header>
-    <main class="contact_content"> <!--Container for all the content on my contact page-->
-      <section class="contact_form"><!--Section containing the contact form-->
-      <h1 class="contact_title">Contact Me</h1> <!--Contact form header-->
-      <p class="contact_text">I am currently looking for full-time employment and freelancing opportunities.</p> <!--Contact form text-->
-      <p class="contact_text">If you wish to reach out to me for any reason please use the form below.</p>
-      <form action="https://send.pageclip.co/ClePxo6woNEccvMe8yOL7LaC6Cck7RXz/ContactForm" class="pageclip-form form_body" method="post"><!--Send form data to pageclip and emailed to my personal email-->
-        <label for="name" class="visually_hidden">Name</label><!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
-        <input type="text" id="name" name="name" class="form_field name_field" placeholder="Name"> <!--Text input for name of person using contact form-->
-        <label for="email" class="visually_hidden">Email</label><!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
-        <input type="email" id="email" name="email" class="form_field email_field" placeholder="Email"><!--Email input for contact form-->
-        <label for="name" class="visually_hidden">Subject</label><!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
-        <input type="text" id="subject" name="subject" class="form_field subject_field" placeholder="Subject"><!--Text input for email subject -->
-        <label for="message" class="visually_hidden">Message</label> <!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
-        <textarea id="message" name="message" class="form_field message_field" placeholder="Message"></textarea><!--Text Area for the contact form email message-->
-        <button type="submit" class="pageclip-form__submit--dark-loader form_button"><!--Submit button with custom loader from pageclip-->
-          <span>Send</span><!--Needed for the custom loader-->
-        </button>
-      </form>
+    <main class="contact_content">
+      <!--Container for all the content on my contact page-->
+      <section class="contact_form">
+        <!--Section containing the contact form-->
+        <h1 class="contact_title">Contact Me</h1>
+        <!--Contact form header-->
+        <p class="contact_text">
+          I am currently looking for full-time employment and freelancing
+          opportunities.
+        </p>
+        <!--Contact form text-->
+        <p class="contact_text">
+          If you wish to reach out to me for any reason please use the form
+          below.
+        </p>
+        <form
+          action="https://send.pageclip.co/ClePxo6woNEccvMe8yOL7LaC6Cck7RXz/ContactForm"
+          class="pageclip-form form_body"
+          method="post"
+        >
+          <!--Send form data to pageclip and emailed to my personal email-->
+          <label for="name" class="visually_hidden">Name</label
+          ><!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form_field name_field"
+            placeholder="Name"
+          />
+          <!--Text input for name of person using contact form-->
+          <label for="email" class="visually_hidden">Email</label
+          ><!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form_field email_field"
+            placeholder="Email"
+          /><!--Email input for contact form-->
+          <label for="name" class="visually_hidden">Subject</label
+          ><!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            class="form_field subject_field"
+            placeholder="Subject"
+          /><!--Text input for email subject -->
+          <label for="message" class="visually_hidden">Message</label>
+          <!--Using this class is w3 recomended way to hide a label while still allowing screen reader access-->
+          <textarea
+            id="message"
+            name="message"
+            class="form_field message_field"
+            placeholder="Message"
+          ></textarea
+          ><!--Text Area for the contact form email message-->
+          <button
+            type="submit"
+            class="pageclip-form__submit--dark-loader form_button"
+          >
+            <!--Submit button with custom loader from pageclip-->
+            <span>Send</span
+            ><!--Needed for the custom loader-->
+          </button>
+        </form>
       </section>
     </main>
-    <footer style="padding: 1em"> <!--Responsive footer-->
+    <footer style="padding: 1em">
+      <!--Responsive footer-->
       <a
         style="text-decoration: none; color: #dbe8d4; padding-bottom: 1em"
         href="mailto:zachjamesjohn@gmail.com"
         >zachjamesjohn@gmail.com</a
-      > <!--Direct email link-->
-      <ul style="list-style: none"> <!--Unordered list containing two social media buttons-->
+      >
+      <!--Direct email link-->
+      <ul style="list-style: none">
+        <!--Unordered list containing two social media buttons-->
         <li>
-          <a class="footer_social" href="https://github.com/zachjamesjohn?tab=repositories"> <!--Link to github using font awesome icon-->
+          <a
+            class="footer_social"
+            href="https://github.com/zachjamesjohn?tab=repositories"
+          >
+            <!--Link to github using font awesome icon-->
             <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x "></i>
-              <i class="fa fa-github fa-stack-1x" style="color: #2e3445; "></i>
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x" style="color: #2e3445"></i>
             </span>
           </a>
         </li>
         <li>
-          <a class="footer_social" href="https://www.linkedin.com/in/zachary-john-92a4a515a/"><!--Link to linkedin using font awesome icon-->
+          <a
+            class="footer_social"
+            href="https://www.linkedin.com/in/zachary-john-92a4a515a/"
+            ><!--Link to linkedin using font awesome icon-->
             <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x "></i>
-                <i class="fa fa-linkedin fa-stack-1x" style="color: #2e3445; "></i>
-              </span>   
-            </i></a>
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x" style="color: #2e3445"></i>
+            </span>
+          </a>
         </li>
       </ul>
-      <p class="copywrite" style="padding-top: 1em; font-size: 0.75em">&copy; Zachary John 2021</p> <!--Copywrite notice-->
+      <p class="copywrite" style="padding-top: 1em; font-size: 0.75em">
+        &copy; Zachary John 2021
+      </p>
+      <!--Copywrite notice-->
     </footer>
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script> <!--Used to collect form information without using a server-->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <!--Used to collect form information without using a server-->
   </body>
 </html>
