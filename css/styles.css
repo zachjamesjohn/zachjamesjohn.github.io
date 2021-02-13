@@ -1,7 +1,5 @@
 /*syles.css
-COIS 3420 Web Application Development
-Assignment #1 - Front End Design
-Author: Zachary John - zjohn
+Author: Zachary John 
 Description: This is the css file containing the css for the entire portfolio page not including some minor heading inline css*/
 
 /*Imported fonts*/
@@ -47,7 +45,7 @@ a:link {
   padding-bottom: 1em; /*Adds padding to the bottom of the resume text*/
 }
 
-/*Nav bar styling*/
+/*Navbar styling*/
 header {
   display: flex; /*Use flexbox on the header */
   justify-content: space-between; /*Evenly distribute the items in the line*/
@@ -84,7 +82,7 @@ nav {
 .toggle_button {
   position: absolute; /*Position relative to the header*/
   top: 1.5em; /*Position the button in relation to the top of the screen*/
-  right: 1em; /*Position the button in relation to the rigth of the screen*/
+  right: 1em; /*Position the button in relation to the right of the screen*/
   display: none; /*Do not display by default*/
   flex-direction: column; /*The direction in which the white bars are stacked*/
   justify-content: space-between; /*Evenly distribute the items*/
@@ -116,7 +114,7 @@ nav {
 /*Footer styling*/
 footer {
   width: 100%; /*Span the entire screen width*/
-  margin-top: auto; /*Used to keep footer at bootom of screen when not enough content*/
+  margin-top: auto; /*Used to keep footer at bottom of screen when not enough content*/
   color: #f8f8ff; /*Text in footer is off-white*/
 
   /* * ? Does the footer look better with or without the different color*/
@@ -246,7 +244,7 @@ footer ul {
   background-color: #2b2b2b; /*Color of the form fields*/
   border: 0; /*Remove all border*/
   border-radius: 1%; /*Slightly round edges*/
-  padding-left: 0.25em; /*Add padding the move the placehodler text slightly off left side of the input box*/
+  padding-left: 0.25em; /*Add padding the move the placeholder text slightly off left side of the input box*/
   font-size: 1em; /*Set the font size*/
   font-family: "Maven Pro", sans-serif; /*Apply the imported font to the text in main*/
   color: #f8f8ff; /*Make the text an offwhite color*/
@@ -263,7 +261,7 @@ footer ul {
   background-color: #2b2b2b; /*Set the background color*/
 }
 
-/*Have labels for accessibility reasons but do not display. This is following the w3 recomended method*/
+/*Have labels for accessibility reasons but do not display. This is following the w3 recommended method*/
 
 .visually_hidden {
   /*presenting the label in a 1-by-1 pixel area with a 1-pixel margin,*/
@@ -284,7 +282,7 @@ footer ul {
 
 @media (max-width: 650px) {
   .toggle_button {
-    display: flex; /*Displays when the screensize is small enough */
+    display: flex; /*Displays when the screen size is small enough */
   }
 
   nav {
@@ -336,7 +334,7 @@ footer ul {
 @media (max-width: 900px) {
   /* Image starts overlapping text*/
   .about_image img {
-    margin-bottom: 1em; /*Add extra pading under the image when it would be over text*/
+    margin-bottom: 1em; /*Add extra padding under the image when it would be over text*/
   }
 }
 
@@ -360,11 +358,11 @@ footer ul {
 }
 
 @media (max-width: 426px) {
-  /*Image breaks from text and becomes it's own line*/
+  /*Image breaks from text and becomes its own line*/
   .about_image img {
     margin: 0 30vw; /*Break away from the text*/
     float: none;
-    margin-bottom: 1em; /*Adds spacng on the bottom of the image*/
+    margin-bottom: 1em; /*Adds spacing on the bottom of the image*/
   }
   .about_text {
     margin-right: 0; /*Removes the right margin from the text which causes problems with overhang*/
@@ -447,7 +445,7 @@ footer ul {
     grid-gap: 0.5em 0em; /*Remove the gap to fix overhang issue*/
   }
   .contact_form {
-    width: 100vw; /*Contact form will not overhand becasue it takes up 100% of the viewport width*/
+    width: 100vw; /*Contact form will not overhand because it takes up 100% of the viewport width*/
   }
 
   .form_field.subject_field,

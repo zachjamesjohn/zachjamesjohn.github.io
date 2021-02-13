@@ -1,7 +1,5 @@
 //script.js
-//COIS 3420 Web Application Development
-//Assignment #1 - Front End Design
-//Author: Zachary John - zjohn
+//Author: Zachary John
 //Description: The only thing this script does is open the hamburger menu by changing the active class
 
 const toggleButton = document.getElementsByClassName('toggle_button')[0]
