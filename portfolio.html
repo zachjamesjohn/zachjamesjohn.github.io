@@ -1,0 +1,196 @@
+<!--portfolio.html-->
+<!--Author: Zachary John-->
+<!--Copyright 2021-->
+<!--Description: This page is the portfolio page for my personal website site. It contains examples of my work to demonstrate my abilities to 
+    potential clients and employers.-->
+<!--Each page has a responsive header for navigation that turns into a hamburger menu when viewed on smaller screen sizes-->
+<!--Each page has a footer with links to my github and my linkedin-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!--Title of page-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--Link to External stylesheet-->
+    <script src="scripts/script.js" defer></script>
+    <!--Link to Javascript file that will not run until the page is loaded-->
+    <script src="https://use.fontawesome.com/56e4d19ff3.js"></script>
+    <!--Link to use font awesome icons-->
+  </head>
+  <body>
+    <header>
+      <p class="logo"><a href="index.html">Zachary John</a></p>
+      <!--Site logo using my name-->
+      <a href="#" class="toggle_button">
+        <!--Hamburger Button-->
+        <span class="bar"></span>
+        <!--Filed with a white background to create the hamburger button-->
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <nav>
+        <!--Responsive nav bar-->
+        <ul class="nav_links">
+          <!--Unordered list used for nav bar-->
+          <li><a href="index.html">Homepage</a></li>
+          <!--Individual list items containing links-->
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="portfolio_content">
+      <h1 class="portfolio_title">Portfolio</h1>
+      <p class="portfolio_text">
+        Featured below is some of my past work as a Web Developer. If you are
+        would like to talk about building you a website or web application
+        please contact me <a href="contact.html">here.</a>
+      </p>
+      <div class="card_grid">
+        <div class="card">
+          <img
+            class="card_image"
+            src="img/Screenshot-MyCommunity.png"
+            alt=""
+            style="width: 40vw"
+          />
+          <div class="container">
+            <h4><b>Trent University - MyCommunity Website</b></h4>
+            <p class="container_text">
+              During my time at Trent University I helped lead the re-design of
+              the MyCommunity website. This website was used by alumni and
+              donors to keep up with Trent University news stories, access
+              alumni services and access donation forms. This website was built
+              on Blackbaud's NetCommunity platform allowing connections to their
+              Raiser's Edge Software which is a database software used for
+              fundraising and non-profits.
+            </p>
+            <p>
+              <a href="https://mycommunity.trentu.ca/" target="_blank"
+                >Live Link</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card_image"
+            src="img/Screenshot-DaneBland.png"
+            alt=""
+            style="width: 40vw"
+          />
+          <div class="container">
+            <h4><b>Dane Bland - Ontario Liberal Party Nomination Page</b></h4>
+            <p class="container_text">
+              Dane Bland is running for the provincial Ontario Liberal Party
+              nomination for Peterborough Kawartha. He is a former colleague of
+              mine at Trent University and when he was having some trouble
+              setting up his website he reached out to me for assistance. I was
+              able to assist him naviagte the Nationbuilder platform he was
+              using due to it's fundraising application. I was able to help him
+              set up his website with a custom domain and add custom content. I
+              remain on call ready to assist him when needed.
+            </p>
+            <p>
+              <a href="https://www.danebland.ca" target="_blank">Live Link</a>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card_image"
+            src="img/Screenshot-RadicalRoadMarketplace.png"
+            alt=""
+            style="width: 40vw"
+          />
+          <div class="container">
+            <h4><b>Radical Road Marketplace - Ecommerce Store</b></h4>
+            <p class="container_text">
+              I took over the Radical Road Marketplace e-commerce store for my
+              client mid development. Since taking over I have been in charge of
+              both the front-end development through the Webflow platform and
+              the backend development using the FoxyCart e-commerce platform and
+              Stripe to process payments. This e-commerce store has a variety of
+              beers, spirits, wines and ciders available for purchase and
+              shipped Canada-wide.
+            </p>
+            <p>
+              <a href="https://www.radicalroadmarketplace.com/" target="_blank"
+                >Live Link</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card_image"
+            src="img/Screenshot-H2CraftSpirits.png"
+            alt=""
+            style="width: 40vw"
+          />
+          <div class="container">
+            <h4><b>H2 Craft Spirts - Ecommerce Store</b></h4>
+            <p class="container_text">
+              I took over the H2 Craft Spirits e-commerce store for my client
+              mid development. Since taking over I have been in charge of both
+              the front-end development through the Webflow platform and the
+              backend development using the FoxyCart e-commerce platform and
+              Stripe to process payments.This e-commerce store has a variety of
+              H2 Craft Spirits and contains information related to the company.
+              The spirits are available for purchase and ship Canada-wide.
+            </p>
+            <p>
+              <a href="https://www.h2craftspirits.com/" target="_blank"
+                >Live Link</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer style="padding: 1em">
+      <!--Responsive footer-->
+      <a
+        style="text-decoration: none; color: #dbe8d4; padding-bottom: 1em"
+        href="mailto:zachjamesjohn@gmail.com"
+        >zachjamesjohn@gmail.com</a
+      >
+      <!--Direct email link-->
+      <ul style="list-style: none">
+        <!--Unordered list containing two social media buttons-->
+        <li>
+          <a
+            class="footer_social"
+            href="https://github.com/zachjamesjohn?tab=repositories"
+          >
+            <!--Link to github using font awesome icon-->
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x" style="color: #2e3445"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer_social"
+            href="https://www.linkedin.com/in/zachjamesjohn/"
+            ><!--Link to linkedin using font awesome icon-->
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x" style="color: #2e3445"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p class="copywrite" style="padding-top: 1em; font-size: 0.75em">
+        &copy; Zachary John 2021
+      </p>
+      <!--Copyright notice-->
+    </footer>
+  </body>
+</html>
